@@ -1,0 +1,3 @@
+1. The prototype for "elaboration iteration 1" implements creating a new trip. Every trip has a budget, location, dates, and participants. The prototype also includes modifying an existing trip, including adding friends to a trip and changing the trip's budget, location, and dates. The user has an id, a name, a location, a list of friends, a current trip, and a list of trips.
+
+2. The prototype is run by running the Main class, which contains the main() method. The interface instructs the user to enter information. The prototype mostly assumes that the user will input relevant information that fits the request. If the user input's information that does not fit the request, the prototype will loop through the instructions again using a try-catch block inside a while loop.

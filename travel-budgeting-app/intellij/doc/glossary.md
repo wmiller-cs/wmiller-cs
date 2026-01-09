@@ -1,0 +1,3 @@
+Bottom Navigation Bar: Allows for user to switch between screens similar to a tab system on an internet browser. Each tab has an icon representing the screen it switches to.
+Dashboard: A window which contains trip information. Displays expenses as either a ledger or a pie chart which can sort by types of expenses or users' expenses if there are multiple people on the trip. Each expense entry has a cost, a memo, a location, and a date/time stamp.
+Adding Friends: Each user will have a unique ID which can be used to connect with other users. When users are connected as friends, they can invite each other to trips they create.

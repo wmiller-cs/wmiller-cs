@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddExpenseScreen">
+
+    <TextView
+        android:id="@+id/addExpenseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="64dp"
+        android:text="Add an Expense"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addExpenseTypeLabel"
+        android:layout_width="90dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="36dp"
+        android:text="Type:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseTitle" />
+
+    <EditText
+        android:id="@+id/addExpenseType"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="(e.g. Food)"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:theme="@android:style/Theme.WithActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseTitle" />
+
+    <ImageButton
+        android:id="@+id/addExpenseTypeInfoButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toRightOf="@+id/addExpenseType"
+        app:layout_constraintTop_toTopOf="@+id/addExpenseType"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        app:tint="#000000" />
+
+    <TextView
+        android:id="@+id/addExpenseCostLabel"
+        android:layout_width="90dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="36dp"
+        android:text="Cost:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseTypeLabel" />
+
+    <EditText
+        android:id="@+id/addExpenseCost"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="(e.g. 18.61)"
+        android:theme="@android:style/Theme.WithActionBar"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseType" />
+
+    <TextView
+        android:id="@+id/addExpenseMemoLabel"
+        android:layout_width="90dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="36dp"
+        android:text="Memo:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseCostLabel" />
+
+    <EditText
+        android:id="@+id/addExpenseMemo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="(e.g. Dinner at Pizzeria Bacio with friends.)"
+        android:theme="@android:style/Theme.WithActionBar"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:textSize="15sp"
+        android:maxLines ="4"
+        android:maxLength ="100"
+        android:scrollHorizontally="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseCost" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addExpenseSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Save"
+        android:background="@drawable/label_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseMemo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addExpenseCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Cancel"
+        android:background="@drawable/label_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseSaveButton" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
